@@ -67,8 +67,22 @@ function tableHeaders() {
     }
 }
 tableHeaders();
-
-
+//making the table cells
+function createTableCells(){
+    for(let i=0; i<myObject.length; i++){
+        let row = document.createElement('tr');
+        table.appendChild(row);
+        for(let j=0;j<=workingHhours.length;j++){
+            let rowCell=document.createElement('td');
+            row.appendChild(rowCell);
+            if(j==0){
+                rowCell.textContent=myObject[i].locationName;
+            }else{
+                rowCell.textContent=myObject[i].cookiesSoldPerHour[j-1];
+            }
+        }
+    }
+}
 let seattle = new Shop('seattle',23,65,6.3);
 let tokyo = new Shop('tokyo',3,24,1.2);
 let dubai = new Shop('dubai',11,38,3.7);
