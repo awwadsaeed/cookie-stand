@@ -41,6 +41,7 @@ function renderOutput(location,hours,totalSales){
 
 
 let seattle = {
+    locationName:'seattle',
     minCustomer: 23,
     maxCustomer: 65,
     avgCookies: 6.3,
@@ -52,6 +53,7 @@ let seattle = {
     }
 }
 let Tokyo= {
+    locationName:'tokyo',
     minCustomer: 3,
     maxCustomer: 24,
     avgCookies: 1.2,
@@ -63,6 +65,7 @@ let Tokyo= {
     }
 }
 let dubai = {
+    locationName:'dubai',
     minCustomer: 11,
     maxCustomer: 38,
     avgCookies: 3.7,
@@ -74,6 +77,7 @@ let dubai = {
     }
 }
 let paris = {
+    locationName:'paris',
     minCustomer: 20,
     maxCustomer: 38,
     avgCookies: 2.3,
@@ -86,6 +90,7 @@ let paris = {
 }
 
 let lima = {
+    locationName:'lima',
     minCustomer: 2,
     maxCustomer: 16,
     avgCookies: 4.6,
@@ -99,8 +104,8 @@ let lima = {
 
 
 
-renderOutput('seattle',workingHhours,seattle.totalCookiesSold());
-renderOutput('Tokyo',workingHhours,Tokyo.totalCookiesSold());
-renderOutput('dubai',workingHhours,dubai.totalCookiesSold());
-renderOutput('paris',workingHhours,paris.totalCookiesSold());
-renderOutput('lima',workingHhours,lima.totalCookiesSold());
+renderOutput(seattle.locationName,workingHhours,seattle.totalCookiesSold());
+renderOutput(Tokyo.locationName,workingHhours,Tokyo.totalCookiesSold());
+renderOutput(dubai.locationName,workingHhours,dubai.totalCookiesSold());
+renderOutput(paris.locationName,workingHhours,paris.totalCookiesSold());
+renderOutput(lima.locationName,workingHhours,lima.totalCookiesSold());
