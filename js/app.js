@@ -48,6 +48,18 @@ Shop.prototype.renderOutput=function (hours){
     }
 }
 
+//creating objects and rendering them
+let seattle = new Shop('seattle',23,65,6.3);
+let tokyo = new Shop('tokyo',3,24,1.2);
+let dubai = new Shop('dubai',11,38,3.7);
+let paris = new Shop('paris',20,38,2.3);
+let lima = new Shop('lima',2,16,4.6);
+
+for(let i=0;i<myObject.length;i++){
+    myObject[i].randomNumber();
+    myObject[i].cookiesSold();
+    myObject[i].renderOutput();
+}
 
 // let seattle = {
 //     locationName:'seattle',
