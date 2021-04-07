@@ -99,6 +99,27 @@ let dubai = new Shop('dubai',11,38,3.7);
 let paris = new Shop('paris',20,38,2.3);
 let lima = new Shop('lima',2,16,4.6);
 
+let shopForm = document.getElementById('shopInfo');
+shopForm.addEventListener('submit',addShop);
+
+function addShop(e){
+    e.preventDefault();
+    let name = e.target.nameField.value;
+    let minCustomer = e.target.minCustomer.value;
+    let maxCustomer = e.target.maxCustomer.value;
+    let avgCookies =e.target.avg.value;
+    
+    let newShop = new Shop(name,minCustomer,maxCustomer,avgCookies);
+    table.textContent='';
+    
+header();
+
+for(let i=0;i<shopList.length;i++){
+    shopList[i].render();
+}
+footer();
+
+}
 
 header();
 

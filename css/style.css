@@ -1,11 +1,9 @@
-table,th,td{
-    border-collapse: collapse;
-    border:solid black 1px;
-}
+
 *{
     box-sizing: border-box;
 }
 a{
+    transition: color 250ms;
     text-decoration: none;
     color: #e75b5b;
     font-weight: bold;
@@ -15,6 +13,7 @@ a:hover{
     color: blue;
 }
 body{
+    min-width: 1200px;
     background-color: whitesmoke;
 }
 body header{
@@ -48,9 +47,10 @@ width: 20%;
     text-decoration: none;
     font-size: 13px;
     font-weight: lighter;
+  
 }
-#navi ul li a:hover{
-    color: blue;
+ a:hover{
+    color: purple;
 }
 hr{
     border: 1px solid lightgrey;
@@ -60,10 +60,16 @@ body main{
     clear: both;
 }
 h1{
-    color: #e75b5b;
+    color: rgb(255, 106, 0);;
     margin: 10px;
     font-weight: bold;
     font-size: 26px;
+}
+h2{
+    color: rgb(255, 106, 0);;
+    margin: 10px;
+    font-weight: bold;
+    font-size:20px;
 }
 #moving{
     background-color: whitesmoke;
@@ -92,7 +98,7 @@ h1{
     
 }
 #mobing nav ul li a{
-    color: #e75b5b;
+    color: rgb(255, 106, 0);;
 }
 #moving input{
     position: absolute;
@@ -125,6 +131,11 @@ footer{
     position: absoulte;
     background-color: darkgray;
     bottom:0;
+}
+#bot-footer p{
+    color: #ce1212;
+    font-weight: bold;
+    font-size: 18px;
 }
 #top-footer{
     height: 40px;
@@ -164,3 +175,4 @@ footer{
     height:100px;
     margin-right: 25px;
 }
+
