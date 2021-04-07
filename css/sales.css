@@ -1,0 +1,148 @@
+table,th,td{
+    border-collapse: collapse;
+    border:solid black 1px;
+}
+th{
+    font-weight: bold;
+    padding: 3px;
+    background-color: #e75b5b;
+    border-radius: 10px;
+}
+td{
+    color: #360000;
+    background-color: gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px;
+}
+body{
+    position: relative;
+    margin: 8px;
+    background-color: whitesmoke;
+    min-width: 1000px;
+}
+header{
+    background-color: lightgray;
+}
+h1{
+    display: inline-block;
+    color: #e75b5b;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 26px;
+}
+body main{
+    clear: right;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+body main p{
+    text-align: center;
+}
+form{
+    margin: 10px;
+    padding: 5px;
+}
+fieldset{
+    padding:10px;
+    border: 1px solid rgb(167, 167, 167);
+}
+label{
+    display: inline-block;
+    width: 100px;
+}
+input{
+    outline: none;
+    margin-right: 20px;
+}
+#submit{
+    color: rgb(87, 87, 87);
+    margin-left: 10px;
+    border: 1px solid rgb(170, 170, 170);
+    background-color: lightgrey;
+    margin-right:50px;
+}
+#submit:hover{
+    box-shadow: 2px 2px 1px grey;
+}
+#submit:active{
+    box-shadow: none;
+}
+table{
+    margin: 15px;
+   
+}
+span{
+    float: right;
+    margin-right:50px;
+    margin-top: 15px;
+}
+
+a{
+    color: #e75b5b;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 1s;
+}
+a:hover{
+color:purple;
+}
+
+#mainElement{
+    margin-left: 20%;
+  
+}
+
+@keyframes move{
+    0%   {left:-200px;top: 0px;}
+    25%  {left: 200px;top: 50px;}
+    50%  {left:600px;top:100px;}
+    100% {left:1500px;top:150px;}
+}
+
+#d1{
+    position: relative;
+    width:80px;
+    height:30px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+    animation-timing-function: linear;
+
+}
+#d2{
+    z-index: 0;
+    background-color: lightgray;
+    position: relative;
+    left: 1000px;
+    top: 150px;
+    width:80px;
+    height:30px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse ;
+    animation-timing-function: linear;
+
+}
+#animation{
+    height: 200px;
+    width: 800px;
+}
+
+body footer{
+background-color: lightgrey;
+height: 50px;
+text-align: center;
+}
+body footer p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #e75b5b;
+}
