@@ -5,9 +5,10 @@
 a{
     transition: color 250ms;
     text-decoration: none;
-    color: #e75b5b;
+    color: #fb3b3b;
     font-weight: bold;
     font-size: 24px;
+    font-family: Georgia;
 }
 a:hover{
     color: blue;
@@ -64,12 +65,14 @@ h1{
     margin: 10px;
     font-weight: bold;
     font-size: 26px;
+    font-family: 'dela gothic one';
 }
 h2{
     color: rgb(255, 106, 0);;
     margin: 10px;
     font-weight: bold;
     font-size:20px;
+    font-family: 'dela gothic one';
 }
 #moving{
     background-color: whitesmoke;

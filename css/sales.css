@@ -14,6 +14,10 @@ td{
     border-radius: 10px;
     text-align: center;
     padding: 3px;
+    font-family: 'arial';
+}
+p{
+    font-family: Georgia;
 }
 body{
     position: relative;
@@ -30,6 +34,7 @@ h1{
     margin: 15px;
     font-weight: bold;
     font-size: 26px;
+    font-family: 'dela gothic one';
 }
 body main{
     clear: right;
@@ -82,11 +87,12 @@ span{
 }
 
 a{
-    color: #e75b5b;
+    color: #fb3b3b;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     transition: color 1s;
+    font-family: 'Georgia';
 }
 a:hover{
 color:purple;
